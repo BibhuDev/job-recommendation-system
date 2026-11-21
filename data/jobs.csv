@@ -1,0 +1,6 @@
+title,company,location,description,required_skills,experience_level,employment_type,salary_min,salary_max,job_url,posted_at
+Python Backend Intern,TechNova,Bengaluru,Build backend APIs using Python and FastAPI,Python;FastAPI;SQL,Entry Level,Internship,15000,25000,https://example.com/jobs/1,2026-11-15
+Frontend Developer Intern,WebCraft,Remote,Develop responsive web applications,React;JavaScript;CSS,Entry Level,Internship,12000,20000,https://example.com/jobs/2,2026-11-16
+Machine Learning Intern,DataSphere,Hyderabad,Work on machine learning models and data pipelines,Python;Machine Learning;Pandas,Entry Level,Internship,18000,30000,https://example.com/jobs/3,2026-11-17
+Java Developer,CodeWorks,Pune,Develop enterprise applications using Java,Java;Spring Boot;SQL,Junior,Full-time,300000,500000,https://example.com/jobs/4,2026-11-18
+Data Analyst Intern,InsightLabs,Remote,Analyze datasets and build visualizations,Python;SQL;Power BI,Entry Level,Internship,10000,18000,https://example.com/jobs/5,2026-11-19
