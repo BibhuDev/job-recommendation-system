@@ -3,6 +3,8 @@ from backend.app.models.profile import UserProfile
 from backend.app.core.config import settings
 from backend.app.db.database import Base
 from backend.app.models.user import User
+from backend.app.models.job import Job
+from backend.app.models.preference import UserPreference
 
 from sqlalchemy import engine_from_config
 from sqlalchemy import pool
