@@ -1,3 +1,5 @@
+from pgvector.sqlalchemy import Vector
+
 from sqlalchemy import (
     Column,
     Integer,
@@ -44,3 +46,5 @@ class Job(Base):
         DateTime(timezone=True),
         server_default=func.now()
     )
+
+    embedding = Column(Vector(384), nullable=True)

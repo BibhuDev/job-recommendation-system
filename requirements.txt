@@ -6,3 +6,6 @@ sqlalchemy
 psycopg[binary]
 alembic
 pwdlib[argon2]
+rank-bm25
+pgvector
+sentence-transformers
