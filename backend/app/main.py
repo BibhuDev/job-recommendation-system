@@ -8,6 +8,8 @@ from backend.app.db.database import get_db
 
 from backend.app.api import users, profiles, preferences, jobs
 
+from backend.app.api.agent import router as agent_router
+
 
 app = FastAPI(
     title=settings.PROJECT_NAME,
@@ -21,6 +23,7 @@ app.include_router(users.router)
 app.include_router(profiles.router)
 app.include_router(preferences.router)
 app.include_router(jobs.router)
+app.include_router(agent_router)
 
 
 @app.get("/")
