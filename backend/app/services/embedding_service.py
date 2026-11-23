@@ -62,3 +62,14 @@ def generate_job_embeddings(db: Session, batch_size: int = 32) -> int:
 
     print(f"Successfully generated embeddings for {len(jobs)} jobs.")
     return len(jobs)
+
+def generate_query_embedding(query: str) -> list[float]:
+    """Convert a search query into a 384-dimensional vector."""
+    model = get_embedding_model()
+
+    embedding = model.encode(
+        query,
+        normalize_embeddings=True
+    )
+
+    return embedding.tolist()
