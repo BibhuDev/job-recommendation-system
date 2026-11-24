@@ -2,6 +2,7 @@ from langchain_groq import ChatGroq
 from langchain_core.messages import SystemMessage
 from langgraph.graph import StateGraph, START, MessagesState
 from langgraph.prebuilt import ToolNode, tools_condition
+from langgraph.checkpoint.memory import InMemorySaver
 
 from backend.app.core.config import settings
 from backend.app.agents.tools import tools
@@ -61,4 +62,8 @@ builder.add_conditional_edges(
 
 builder.add_edge("tools", "assistant")
 
-agent = builder.compile()
+memory = InMemorySaver()
+
+agent = builder.compile(
+    checkpointer=memory
+)
